@@ -26,25 +26,53 @@ body {
 
 #resume{
     width:210mm;
-    min-height:297mm;
-    margin:auto;
-    background:white;
+    height:297mm;
     box-sizing:border-box;
+    overflow:hidden;
+    background:#fff;
 }
 
-@media print{
-
-    body{
-        background:white;
-    }
-
-    #resume{
-        width:210mm;
-        min-height:297mm;
-        margin:0;
-        box-shadow:none;
-    }
+#resume *{
+    box-sizing:border-box;
+    page-break-inside:avoid;
+    break-inside:avoid;
 }
+
+h1{
+    margin:0;
+    font-size:26px;
+}
+
+h2{
+    margin:10px 0 6px;
+    font-size:15px;
+    color:#0f62fe;
+    border-bottom:1px solid #ddd;
+    padding-bottom:2px;
+}
+
+p{
+    margin:4px 0;
+}
+
+ul{
+    margin:4px 0;
+    padding-left:18px;
+}
+
+li{
+    margin:2px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:2px 0;
+}
+
 
 
 /*loading page CSS*/

@@ -99,36 +99,37 @@ goBack.addEventListener("click", () => {
 
 const download_resume = document.getElementById("download_resume");
 
-download_resume.addEventListener('click', async () => {
-  const resume = document.getElementById('resume');
-  resume.style.display = "block";
-  const opt = {
-    margin: 0,
-    filename: "Gulabchandra_Mistri_Resume.pdf",
+download_resume.addEventListener("click", async () => {
+    const resume = document.getElementById("resume");
 
-    image: {
-      type: "jpeg",
-      quality: 1
-    },
+    resume.style.display = "block";
 
-    html2canvas: {
-      scale: 3,          // Higher = sharper PDF
-      useCORS: true,
-      letterRendering: true,
-      scrollY: 0
-    },
+    await document.fonts.ready;
+    await new Promise(resolve => setTimeout(resolve, 100));
 
-    jsPDF: {
-      unit: "mm",
-      format: "a4",
-      orientation: "portrait"
-    },
+    const opt = {
+        margin: 0,
+        filename: "Gulabchandra_Mistri_Resume.pdf",
 
-    pagebreak: {
-      mode: ["avoid-all", "css", "legacy"]
-    }
-  };
+        image: {
+            type: "png",
+            quality: 1
+        },
 
-  await html2pdf().set(opt).from(resume).save();
-  resume.style.display = "none";
+        html2canvas: {
+            scale: 4,
+            useCORS: true,
+            backgroundColor: "#fff"
+        },
+
+        jsPDF: {
+            unit: "mm",
+            format: "a4",
+            orientation: "portrait"
+        }
+    };
+
+    await html2pdf().set(opt).from(resume).save();
+
+   resume.style.display = "none";
 });
