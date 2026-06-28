@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hello GC</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+
+</head>
+
+<body>
+
+  <!-- loading page -->
+  <section class="loading-page" id="loader">
+    <div class="contant">
+      <p class="txt">...loading...</p>
+      <div class="dot">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--header or nav section-->
+  <section class="header">
+    <div class="show_cont">
+      <div class="title_div">
+        <h1>helloGC</h1>
+      </div>
+
+      <div class="item">
+        <a href="#sec1">
+          <li>Home</li>
+        </a>
+        <!-- <a href="#">
+          <li>Project</li>
+        </a> -->
+        <a href="#" id="contactme">
+          <li>Contact</li>
+        </a>
+        <a href="#sec2">
+          <li>About</li>
+        </a>
+      </div>
+
+      <nav class="nav" id="nav">
+        <div class="l a"></div>
+        <div class="l b"></div>
+        <div class="l c"></div>
+      </nav>
+    </div>
+
+  </section>
+
+
+  <!--about section 1 -->
+  <section class="sec1" id="sec1">
+    <canvas id="can"> </canvas>
+    <div class="nav_box" id="nav_box">
+      <a href="#sec1">
+        <li>Home</li>
+      </a>
+      <!-- <a href="#">
+        <li>Project</li>
+      </a> -->
+      <a href="#" id="contactus">
+        <li>Contact</li>
+      </a>
+      <!-- <a href="#sec2">
+        <li>About</li>
+      </a> -->
+      <a href="#sec2">
+        <li>About</li>
+      </a>
+    </div>
+
+    <div class="rotate">
+      <div class="glow"></div>
+      <div class="profile_pic"></div>
+    </div>
+
+    <div class="rapper">
+      <div class="about ab" id="about">
+        <h1 class="ab">Hi, I'm <span class="ab">GC</span></h1>
+
+        <p class="dynamic typing ab" id="typed">
+          Full-Stack Web Developer
+        </p>
+
+        <p>
+          Computer Science undergraduate focused on
+          <span class="fnt_clr ab">MERN Stack Development</span>,
+          building <span class="fnt_clr ab">scalable web applications</span>,
+          and creating seamless digital experiences through modern web technologies.
+        </p>
+        <div class="btn_box ab">
+          <a href="files/mycv.jpeg" download="CV.jpg">
+            <button class="D_btn ab">&#x1F4E5 Download CV</button></a>
+          <button class="H_btn ab" id="hireme">&#x1F381 Hire me</button>
+        </div>
+      </div>
+
+      <div class="hire-container form-field" id="hform">
+        <h2 class="form-field">Hire Me</h2>
+        <form action="" class="form form-field">
+          <div class="rapper-div form-field">
+            <input class="form-field" type="text" name="firstName" placeholder="first name" />
+            <input class="form-field" type="text" name="lastName" placeholder="Last name" />
+          </div>
+          <div class="rapper-div form-field">
+            <input class="form-field" type="email" name="email" placeholder="Email" />
+            <input class="form-field" type="text" name="companyName" placeholder="Company Nmae" />
+          </div>
+          <select class="form-field" name="options">
+            <option value="value1">Option 1</option>
+            <option value="value2">Option 2</option>
+            <option value="value3">Option 3</option>
+          </select>
+          <textarea class="form-field" name="msg" id="" placeholder="your message..."></textarea>
+          <div class="rapper-div btn-rapper form-field">
+            <button type="button" class="form-field" id="goBack"><span
+                class="carousel-control-prev-icon"></span></button>
+            <button class="form-field" type="submit">Hire</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- introduction section 2 -->
+  <section class="sec2" id="sec2">
+    <h1>About <span class="fnt_clr">Me</span></h1>
+    <p>get to know be batter</p>
+    <div class="contant">
+      <div class="info">
+        <h1>Who am I?</h1>
+
+        <p>
+          I am a <span class="fnt_clr">passionate Full-Stack Web Developer</span> and
+          Computer Science undergraduate with a strong interest in building modern,
+          scalable, and responsive web applications. I enjoy transforming ideas into
+          real-world digital solutions through clean code and efficient development practices.
+        </p><br />
+
+        <p>
+          My primary expertise lies in <span class="fnt_clr">JavaScript, React, Node.js, Express.js, MongoDB, HTML, CSS,
+            and Linux</span>.
+          I have hands-on experience developing full-stack applications, REST APIs,
+          authentication systems, and database-driven solutions while continuously
+          expanding my knowledge of software engineering and modern web technologies.
+        </p>
+
+        <div class="sign">
+          <p class="name">helloGC</p>
+          <p class="loc"><span>from : </span>Bihar, India</p>
+        </div>
+
+        <div class="fun_fect">
+          <img src="img/bulb.png">
+          <p class="fnt_clr">
+            <span>Fun Fact: </span>
+            Curiosity drives me—I enjoy exploring Linux systems, experimenting with new technologies, and building
+            projects just for fun.
+          </p>
+
+        </div>
+      </div>
+
+      <div class="pic"></div>
+    </div>
+  </section>
+
+
+  <!-- content section 3-->
+  <section class="sec3">
+    <h1>My <span class="fnt_clr">Education</span></h1>
+    <p class="top_p">Academic Background</p>
+
+    <div class="box">
+      <div class="deco">
+        <div class="crcl">&#x1F393</div>
+        <div class="line"></div>
+      </div>
+      <div class="info_box">
+        <p class="to_bo">2024 – Present</p>
+        <h2>Bachelor of Technology (B.Tech) in Computer Science & Engineering</h2>
+        <p class="gecv">Government Engineering College, Vaishali</p>
+        <p class="info">
+          Pursuing a degree in Computer Science with a focus on
+          Data Structures & Algorithms, Web Development, Operating Systems,
+          Database Management Systems, Computer Networks, and Software Engineering.
+          Actively building full-stack web applications and strengthening problem-solving skills through practical
+          projects.
+        </p>
+        <p class="to_bo bo"><span>CGPA :</span> 9.13 / 10</p>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- skills and interest section management --->
+  <section class="skill">
+    <h1>My <span>Skills and Interestes</span></h1>
+    <p class="top_p">what pulls me beyond coding</p>
+    <div class="cont">
+      <div class="btn-box">
+        <button class="btn">technical skills</button>
+        <button class="btn">My interest</button>
+        <button class="btn">My Hobbies</button>
+      </div>
+      <div class="slidebox">
+        <div class="c">
+          <div class="st htmlcss">
+            <h4>HTML & CSS</h4>
+            <div class="fill">
+              <div></div>
+              <p>80%</p>
+            </div>
+          </div>
+          <div class="st js">
+            <h4>Java Script</h4>
+            <div class="fill">
+              <div></div>
+              <p>78%</p>
+            </div>
+          </div>
+          <div class="st nodejs">
+            <h4>Node JS</h4>
+            <div class="fill">
+              <div></div>
+              <p>70%</p>
+            </div>
+          </div>
+          <div class="st reactjs">
+            <h4>REACT JS</h4>
+            <div class="fill">
+              <div></div>
+              <p>65%</p>
+            </div>
+          </div>
+          <div class="st nextjs">
+            <h4>Next JS</h4>
+            <div class="fill">
+              <div></div>
+              <p>60%</p>
+            </div>
+          </div>
+          <div class="st sql">
+            <h4>PostgresSQL & Prisma</h4>
+            <div class="fill">
+              <div></div>
+              <p>75%</p>
+            </div>
+          </div>
+          <div class="st mongoDB">
+            <h4>MongoDB</h4>
+            <div class="fill">
+              <div></div>
+              <p>83%</p>
+            </div>
+          </div>
+          <div class="st git">
+            <h4>Git & Github</h4>
+            <div class="fill">
+              <div></div>
+              <p>70%</p>
+            </div>
+          </div>
+          <div class="st linux">
+            <h4>Linux</h4>
+            <div class="fill">
+              <div></div>
+              <p>75%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="c c2  interests-section">
+          <h2>My Interests</h2>
+          <div class="interests-container">
+            <div class="interest-card">
+              <h3>💻 Web Development</h3>
+              <p>I love to build responsive and interactive web application.</p>
+            </div>
+            <div class="interest-card">
+              <h3>📱 Mobile Apps</h3>
+              <p>Exploring Android development and cross-platform solutions.</p>
+            </div>
+            <!-- <div class="interest-card">
+              <h3>🎨 UI/UX Design</h3>
+              <p>Passionate about creating simple, beautiful, and user-friendly designs.</p>
+            </div> -->
+            <div class="interest-card">
+              <h3>⚡ AI & Automation</h3>
+              <p>Interested in how AI can automate tasks and improve user experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="c">
+          <div class="hobby-section">
+            <div class="hobby-card">
+              <img src="./img/drawing.jpg" alt="Photography">
+              <h3>Drawing</h3>
+              <p>I like to draw realistic shaded Drawing.</p>
+            </div>
+            <div class="hobby-card">
+              <img src="./img/coding.jpeg" alt="Coding">
+              <h3>Coding</h3>
+              <p>Building projects and solving real-world problems.</p>
+            </div>
+            <div class="hobby-card">
+              <img src="./img/office_gd.jpeg" alt="Travel">
+              <h3>Communication</h3>
+              <p>I also like to discussing problem with friends.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--Experience section-->
+  <section class="exp">
+    <h1>My <span class="fnt_clr">Experience</span></h1>
+    <p class="top_p">Where I've worked</p>
+    <div class="box">
+      <div class="parent p1">
+        <div class="deco">
+          <div class="crcl">&#128188</div>
+          <div class="line"></div>
+        </div>
+        <div class="info_box">
+          <p class="to_bo">2024 present</p>
+          <h2>Freelance Developer</h2>
+          <ul>
+            <li>Developed 10+ applications for clients and my college</li>
+            <li>Build automation tool's to help students.</li>
+          </ul>
+          <p class="to_bo bo">Small Tools for People</p>
+          <p class="to_bo bo">Hacakathon Website for college</p>
+        </div>
+      </div>
+
+      <div class="parent p2">
+        <div class="deco">
+          <div class="crcl">&#128188</div>
+          <div class="line"></div>
+        </div>
+        <div class="info_box">
+          <p class="to_bo">2024 present</p>
+          <h2>Coding Club Lead</h2>
+          <p>Government Engineering College Vaishali</p>
+          <ul>
+            <li>Conducted 5+ workshops on web development and cybersecurity</li>
+            <li>Mentored 10+ students in competitive programming</li>
+            <li>Organized hackathons with 10+ participants</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!--Archivement section management-->
+  <section class="ach">
+    <h1>My <span>Achivements</span></h1>
+    <div class="box">
+      <div class="cbox">
+        <h1>&#127942</h1>
+        <h2>1st place python compitation</h2>
+        <p>securing 1st place college level Hackethon</p>
+        <a href="#">september 2024</a>
+      </div>
+      <div class="cbox">
+        <h1>&#127942</h1>
+        <h2>7th rank in Web Dev. compitation</h2>
+        <p>securing 7th place college web development Quiz</p>
+        <a href="#">march 2025</a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section class="gal">
+    <h1>My <span>Gallary</span></h1>
+    <div id="carouselExampleIndicators" class="parent carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></button>
+      </div>
+
+      <div class="imgParent carousel-inner">
+        <div class="editSlide  carousel-item active">
+          <img class="d-block" src="./img/img_1.jpg" alt="First slide">
+        </div>
+        <div class="editSlide carousel-item">
+          <img class="d-block" src="./img/img_2.jpg" alt="Second slide">
+        </div>
+        <div class="editSlide carousel-item">
+          <img class="d-block" src="./img/img_3.jpg" alt="Third slide">
+        </div>
+        <div class="editSlide carousel-item">
+          <img class="d-block" src="./img/img_4.jpg" alt="Fourth slide">
+        </div>
+        <div class="editSlide carousel-item">
+          <img class="d-block" src="./img/img_5.jpg" alt="Fifth slide">
+        </div>
+        <div class="editSlide  carousel-item">
+          <img class=" d-block" src="./img/img_6.jpg" alt="sixth slide">
+        </div>
+        <div class="editSlide  carousel-item">
+          <img class=" d-block" src="./img/img_7.jpg" alt="seventh slide">
+        </div>
+      </div>
+
+      <button class="cstmBtn carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="cstmBtn carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+  <!--footer section-->
+  <section class="footer">
+    <div class="tp">
+      <div class="left">
+        <h2>HighTech Web Creator</h2>
+        <p>A passionate developer creating innovative solutions with cutting-edge technologies.</p>
+
+      </div>
+      <div class="center">
+        <h3>Quick Links</h3>
+        <a href="#">Home</a><br>
+        <a href="#">About</a><br>
+        <a href="#">Education</a><br>
+      </div>
+      <div class="right">
+        <h3>Contact Info</h3>
+        <a href="#">gc360max@gmail.com</a>
+        <a href="#">+91 9534007784</a>
+      </div>
+    </div>
+    <div class="bo">
+      <p> © 2025 helloGC. All rights reserved. </p>
+      <hr>
+      <p>Designed & Developed by &#x1F495 helloGC</p>
+    </div>
+  </section>
+
+
+
+  <script>
+    window.addEventListener("load", () => {
+      document.body.classList.remove("loading");
+      document.getElementById("loader").remove();
+    });
+  </script>
+
+
+  <script src="typed_eff.js" type="text/javascript" charset="utf-8"></script>
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="canva_draw.js" type="text/javascript" charset="utf-8"></script>
+  <script src="skill_btn.js" type="text/javascript" charset="utf-8"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
