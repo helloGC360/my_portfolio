@@ -1600,13 +1600,14 @@ h2 {
 
 .footer .bo hr {
   width: 60%;
-  min-width: 400px;
+  min-width: 280px;
   border: 1px solid;
   display: block;
 }
 
-@media (max-width:480px) {
+/* @media (max-width:480px) {
   .footer .bo hr {
-    max-width: 320px;
+    width: 320px;
+    color: red;
   }
-}
+} */
