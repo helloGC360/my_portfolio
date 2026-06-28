@@ -1604,3 +1604,9 @@ h2 {
   border: 1px solid;
   display: block;
 }
+
+@media (max-width:480px) {
+  .footer .bo hr {
+    max-width: 320px;
+  }
+}
