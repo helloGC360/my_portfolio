@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
   <!-- loading page -->
   <section class="loading-page" id="loader">
@@ -107,8 +108,8 @@
           and creating seamless digital experiences through modern web technologies.
         </p>
         <div class="btn_box ab">
-          <a href="files/mycv.jpeg" download="CV.jpg">
-            <button class="D_btn ab">&#x1F4E5 Download CV</button></a>
+
+          <button class="D_btn ab" id="download_resume">&#x1F4E5 Download CV</button>
           <button class="H_btn ab" id="hireme">&#x1F381 Hire me</button>
         </div>
       </div>
@@ -493,6 +494,246 @@
       <p>Designed & Developed by &#x1F495 helloGC</p>
     </div>
   </section>
+
+
+
+
+
+  <div id="resume" style="
+max-width:794px;
+margin:auto;
+padding:45px;
+background:#fff;
+color:#222;
+font-family:Arial,Helvetica,sans-serif;
+line-height:1.5;
+box-sizing:border-box;
+display: none;
+">
+
+    <!-- HEADER -->
+
+    <div style="text-align:center;border-bottom:3px solid #0f62fe;padding-bottom:15px;margin-bottom:25px;">
+      <h1 style="margin:0;font-size:34px;letter-spacing:1px;">
+        GULABCHANDRA MISTRI
+      </h1>
+
+      <div style="margin-top:8px;font-size:15px;">
+        📞 +91 9534007784 |
+        ✉ gulabchandra24cse42.gecv@gmail.com
+      </div>
+
+      <div style="margin-top:5px;font-size:15px;">
+        Hajipur, Bihar |
+        github.com/helloGC360
+      </div>
+
+    </div>
+
+    <!-- SUMMARY -->
+
+    <h2 style="color:#0f62fe;border-bottom:2px solid #ddd;padding-bottom:4px;">
+      PROFESSIONAL SUMMARY
+    </h2>
+
+    <p style="margin-top:10px;text-align:justify;">
+      Computer Science undergraduate with strong interest in Full Stack Web Development,
+      Software Engineering, and scalable application development. Experienced in building
+      modern web applications using the MERN stack, JavaScript, and React. Comfortable
+      working with Linux, Git, REST APIs, and Data Structures & Algorithms. Passionate
+      about solving real-world problems, writing clean code, and continuously learning new
+      technologies.
+    </p>
+
+
+    <!-- EDUCATION -->
+
+    <h2 style="color:#0f62fe;border-bottom:2px solid #ddd;padding-bottom:4px;">
+      EDUCATION
+    </h2>
+
+    <table style="width:100%;border-collapse:collapse;font-size:15px;">
+      <tr>
+        <td>
+          <b>B.Tech - Computer Science & Engineering</b><br>
+          Government Engineering College, Vaishali
+        </td>
+
+        <td align="right">
+          2024 - 2028<br>
+          CGPA : <b>9.13 / 10</b>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="height:15px;"></td>
+      </tr>
+
+      <tr>
+        <td>
+          <b>Senior Secondary (Class XII)</b><br>
+          Sri Basudeo +2 H.S College, Nayatola
+        </td>
+
+        <td align="right">
+          2023<br>
+          90.4%
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="height:15px;"></td>
+      </tr>
+
+      <tr>
+        <td>
+          <b>Secondary (Class X)</b><br>
+          Sri Basudeo +2 H.S College, Nayatola
+        </td>
+
+        <td align="right">
+          2021<br>
+          90.4%
+        </td>
+      </tr>
+
+    </table>
+
+
+    <!-- SKILLS -->
+
+    <h2 style="color:#0f62fe;border-bottom:2px solid #ddd;padding-bottom:4px;">
+      TECHNICAL SKILLS
+    </h2>
+
+    <table style="width:100%;font-size:15px;">
+
+      <tr>
+        <td width="180"><b>Languages</b></td>
+        <td>C, Java, JavaScript</td>
+      </tr>
+
+      <tr>
+        <td><b>Frontend</b></td>
+        <td>HTML5, CSS3, Tailwind CSS, React.js, Next.js</td>
+      </tr>
+
+      <tr>
+        <td><b>Backend</b></td>
+        <td>Node.js, Express.js, REST API</td>
+      </tr>
+
+      <tr>
+        <td><b>Database</b></td>
+        <td>MongoDB</td>
+      </tr>
+
+      <tr>
+        <td><b>Tools</b></td>
+        <td>Git, GitHub, Linux, VS Code, Postman</td>
+      </tr>
+
+      <tr>
+        <td><b>Core CS</b></td>
+        <td>Data Structures & Algorithms, Operating Systems, Computer Networks, OOP</td>
+      </tr>
+
+    </table>
+
+
+
+    <!-- PROJECTS -->
+
+    <h2 style="color:#0f62fe;border-bottom:2px solid #ddd;padding-bottom:4px;">
+      PROJECTS
+    </h2>
+
+    <p>
+      <b>College Mid-Semester Result Portal</b>
+
+    <ul>
+      <li>Developed a responsive result management interface for students.</li>
+      <li>Focused on modern UI, performance optimization, and clean user experience.</li>
+      <li>Implemented dynamic data rendering and responsive layouts.</li>
+    </ul>
+    </p>
+
+
+    <p>
+      <b>Automatic Result Download Tool</b>
+
+    <ul>
+      <li>Built a utility to automate downloading of student examination results.</li>
+      <li>Reduced manual effort through automated workflows.</li>
+      <li>Focused on usability and efficient data handling.</li>
+    </ul>
+    </p>
+
+
+    <p>
+      <b>Stylish Font Converter Website</b>
+
+    <ul>
+      <li>Developed an online text styling tool capable of converting plain text into multiple Unicode font
+        styles.
+      </li>
+      <li>Designed responsive interface with instant conversion.</li>
+    </ul>
+    </p>
+
+
+    <!-- EXPERIENCE -->
+
+    <h2 style="color:#0f62fe;border-bottom:2px solid #ddd;padding-bottom:4px;">
+      EXPERIENCE
+    </h2>
+
+    <b>Software Development Collaboration</b>
+
+    <ul>
+
+      <li>Collaborated with senior developers on academic software projects.</li>
+
+      <li>Participated in frontend implementation, debugging, feature development, and UI improvements.</li>
+
+      <li>Worked with Git-based workflows and modern JavaScript development practices.</li>
+
+    </ul>
+
+
+    <!-- STRENGTH -->
+
+    <h2 style="color:#0f62fe;border-bottom:2px solid #ddd;padding-bottom:4px;">
+      STRENGTHS
+    </h2>
+
+    <ul>
+
+      <li>Quick learner with strong problem-solving ability.</li>
+
+      <li>Good understanding of Full Stack Web Development.</li>
+
+      <li>Passionate about software engineering and scalable application architecture.</li>
+
+      <li>Comfortable working in Linux development environments.</li>
+
+      <li>Strong analytical and logical thinking.</li>
+
+    </ul>
+
+
+    <!-- INTERESTS -->
+
+    <h2 style="color:#0f62fe;border-bottom:2px solid #ddd;padding-bottom:4px;">
+      INTERESTS
+    </h2>
+
+    <p>
+      Full Stack Development • Backend Engineering • Android Development • Open Source • UI/UX • Artificial
+      Intelligence • System Design
+    </p>
+
+  </div>
 
 
 

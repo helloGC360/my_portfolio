@@ -92,3 +92,43 @@ goBack.addEventListener("click", () => {
 });
 
 
+
+
+
+
+
+const download_resume = document.getElementById("download_resume");
+
+download_resume.addEventListener('click', async () => {
+  const resume = document.getElementById('resume');
+  resume.style.display = "block";
+  const opt = {
+    margin: 0,
+    filename: "Gulabchandra_Mistri_Resume.pdf",
+
+    image: {
+      type: "jpeg",
+      quality: 1
+    },
+
+    html2canvas: {
+      scale: 3,          // Higher = sharper PDF
+      useCORS: true,
+      letterRendering: true,
+      scrollY: 0
+    },
+
+    jsPDF: {
+      unit: "mm",
+      format: "a4",
+      orientation: "portrait"
+    },
+
+    pagebreak: {
+      mode: ["avoid-all", "css", "legacy"]
+    }
+  };
+
+  await html2pdf().set(opt).from(resume).save();
+  resume.style.display = "none";
+});
