@@ -288,9 +288,10 @@ body {
 
 .sec1 .nav_box {
   width: 100%;
+  max-width:420px;
   height: 100%;
   display: inline;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), var(--clr));
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), var(--clr));
   position: fixed;
   z-index: 5;
   transition: 0.5s;
